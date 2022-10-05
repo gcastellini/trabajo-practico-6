@@ -8,6 +8,11 @@ public class GoogleConstants {
 
     public  static final String HOME_BUTTON_NAME= "xpath://*[@id='content']/nav/a";
 
+    public static final String ARRIVAL_IMAGE="xpath://*[@id='text-22-sub_row_1-0-2-0-0']/div/ul/li/a[1]/img";
 
+    public static final String PRODUCT_PAGE="https://practice.automationtesting.in/product/selenium-ruby/";
 
+    public static final String DESCRIPTION_BUTTON="xpath://*[@id='product-160']/div[3]/ul/li[1]";
+
+    public static final String DESCRIPTION="xpath://*[@id='tab-description']";
 }

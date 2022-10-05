@@ -26,4 +26,13 @@ public class GoogleHomeService extends ActionManager {
     }
 
     public static void clickHomeButton(){click(GoogleConstants.HOME_BUTTON_NAME);}
+
+    public static void clickArrivals(){click(GoogleConstants.ARRIVAL_IMAGE);}
+
+    public static void navegarProducto(){
+        navigateTo(GoogleConstants.PRODUCT_PAGE);
+    }
+
+    public static void clickDescription(){click(GoogleConstants.DESCRIPTION_BUTTON);}
+
 }

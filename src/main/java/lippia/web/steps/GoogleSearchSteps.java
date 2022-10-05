@@ -21,14 +21,30 @@ public class GoogleSearchSteps extends PageSteps {
             public void click() {
         GoogleHomeService.clickSearchButton();
     }
+    @When("The client clicks on Arrival Image")
+    public void clickArrival(){
+        GoogleHomeService.clickArrivals();
+    }
     @And("The client clicks on Home menu button")
     public void clickHome(){
         GoogleHomeService.clickHomeButton();
+    }
+    @And("The client clicks on Description tab")
+    public void clickDescription(){
+        GoogleHomeService.clickDescription();
     }
     @Then("The client verify that results are shown properly")
     public void statVerfication() {
         GoogleSearchResultService.verifyResults();
 
     }
+    @Then("The client is in Product page")
+    public void navigateProduct(){
+        GoogleHomeService.navegarProducto();
+    }
 
+    @Then("The client sees a description")
+    public void descriptionDisplayed(){
+        GoogleSearchResultService.descDisplayed();
+    }
 }
