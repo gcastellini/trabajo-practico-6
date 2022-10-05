@@ -1,27 +1,27 @@
 package lippia.web.services;
 
 import com.crowdar.core.actions.ActionManager;
-import lippia.web.constants.GoogleConstants;
+import lippia.web.constants.ArrivalsConstants;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import java.util.List;
 
 
-public class GoogleSearchResultService extends ActionManager {
+public class ArrivalsResultService extends ActionManager {
 
     public static List<WebElement> elements() {
-        List<WebElement> allElements = getElements(GoogleConstants.STATS_ID,String.valueOf(1));
+        List<WebElement> allElements = getElements(ArrivalsConstants.STATS_ID,String.valueOf(1));
         for (int i = 2; i <= 3; i++) {
-            allElements.add(getElement(GoogleConstants.STATS_ID, String.valueOf(i)));
+            allElements.add(getElement(ArrivalsConstants.STATS_ID, String.valueOf(i)));
         }
         return allElements;
     }
 
     public static boolean secElements() {
-        List<WebElement> allElements = getElements(GoogleConstants.STATS_ID,String.valueOf(1));
+        List<WebElement> allElements = getElements(ArrivalsConstants.STATS_ID,String.valueOf(1));
         try {
             for (int i = 2; i <= 4; i++) {
-                allElements.add(getElement(GoogleConstants.STATS_ID, String.valueOf(i)));
+                allElements.add(getElement(ArrivalsConstants.STATS_ID, String.valueOf(i)));
             }
             return true;
         }
@@ -40,7 +40,7 @@ public class GoogleSearchResultService extends ActionManager {
     }
 
     public static WebElement Description(){
-       WebElement description =getElement(GoogleConstants.DESCRIPTION);
+       WebElement description =getElement(ArrivalsConstants.DESCRIPTION);
         return description;
     }
 
