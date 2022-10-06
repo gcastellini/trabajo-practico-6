@@ -21,10 +21,16 @@ public class ArrivalsSteps extends PageSteps {
             public void click() {
         ArrivalsService.clickSearchButton();
     }
-    @When("The client clicks on Arrival Image")
+    @And("The client clicks on Arrival Image")
     public void clickArrival(){
         ArrivalsService.clickArrivals();
     }
+    @And("The client checks that results are shown properly")
+    public void statVerification() {
+        ArrivalsResultService.verifyResults();
+
+    }
+
     @And("The client clicks on Home menu button")
     public void clickHome(){
         ArrivalsService.clickHomeButton();
@@ -33,15 +39,17 @@ public class ArrivalsSteps extends PageSteps {
     public void clickDescription(){
         ArrivalsService.clickDescription();
     }
-    @Then("The client verify that results are shown properly")
-    public void statVerfication() {
-        ArrivalsResultService.verifyResults();
 
-    }
-    @Then("The client is in Product page")
+    @And("The client is in Product page")
     public void navigateProduct(){
         ArrivalsService.navegarProducto();
     }
+    @Then("The client verify that results are shown properly")
+    public void statVerification2() {
+        ArrivalsResultService.verifyResults();
+
+    }
+
 
     @Then("The client sees a description")
     public void descriptionDisplayed(){
