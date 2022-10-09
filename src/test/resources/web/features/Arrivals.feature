@@ -1,3 +1,4 @@
+@Arrivals
 Feature: As a potential client i need to search the website and check Arrivals
 
   Background:

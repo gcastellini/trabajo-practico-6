@@ -5,6 +5,7 @@ Feature: As a potential client i need to log into the website
     Given The client is in Practice page
     When The client clicks on My Account button
 
+    @Smoke
     Scenario Outline: The client logs in with valid username and password
       And The client enters email <email> and password <password>
       Then The client is logged in successfully
@@ -12,7 +13,7 @@ Feature: As a potential client i need to log into the website
         |email||password|
         |giuliana_castellini@hotmail.com||Crowdar22!|
 
-      @prueba2
+      @Smoke
   Scenario Outline: The client logs in incorrect username and password
     And The client enters email <email> and password <password>
     Then The client sees error message
